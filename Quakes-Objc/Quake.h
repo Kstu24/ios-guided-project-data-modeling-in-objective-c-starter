@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
                          latitude:(double)latitude
                         longitude:(double)longitude;
 
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
+
 // Read only makes the property immutable
 @property (nonatomic, readonly) double magnitude;
 @property (nonatomic, readonly, copy) NSString *place;
