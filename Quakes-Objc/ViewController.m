@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LSILog.h"
+#import "FirstResponder.h"
 
 @interface ViewController ()
 
@@ -20,6 +21,9 @@
     
     NSLog(@"Hey Quakes!");
     
+    FirstResponder *firstResponder = [[FirstResponder alloc]init];
+    
+    NSLog(@"");
 }
 
 
