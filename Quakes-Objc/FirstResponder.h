@@ -12,6 +12,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface FirstResponder : NSObject
 
+@property (nonatomic, copy) NSString *name;
+
+/*
+ When writing a property it is writing these two methods under the hood
+ 
+ Setter:
+ - (void)setName:(NSString *)aName;
+ 
+ Getter:
+ - (NSString *)name;
+ 
+ Instance variable (in the class's @interface)
+ NSString *_name;
+ 
+ */
+
 @end
 
 NS_ASSUME_NONNULL_END
